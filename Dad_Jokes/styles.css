@@ -11,7 +11,10 @@ body {
   color: white;
   width: 100%;
   display: grid;
-place-items: center;
+  place-items: center;
+  box-shadow:  5px 5px 3px #2e2e2e,
+                -5px -5px 3px #2e2e2e;
+  padding: 25px;
 }
 
 .joke {
