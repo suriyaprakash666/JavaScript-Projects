@@ -2,6 +2,7 @@ const playBoard = document.querySelector('.play-board');
 const ScoreElement = document.querySelector('.score');
 const HighScoreElement = document.querySelector('.high-score');
 const Controls = document.querySelectorAll('.controls i');
+const GameOver = document.querySelector('.gameover');
 
 let gameOver = false;
 let setIntervalId;
@@ -23,7 +24,7 @@ const ChangeFoodPosition = (e) => {
 
 const gameOverHandler = () => {
     clearInterval(setIntervalId);
-    alert("Game Over! click Ok to restart...")
+    GameOver.innerHTML = `<div class="gameover" style="gameover"> Game Over! </div>`;
     location.reload();
 }
 
@@ -86,5 +87,5 @@ const GameInit = () => {
 }
 
 ChangeFoodPosition();
-setIntervalId = setInterval(GameInit, 120);
+setIntervalId = setInterval(GameInit, 130);
 document.addEventListener("keydown", changeDirection);

@@ -6,15 +6,21 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgb(188, 236, 255);
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
   min-height: 100vh;
-  background-color: aquamarine;
+}
+
+.title {
+  font-size: 3rem;
 }
 .container {
-  height: 80vmin;
-  width: 70vmin;
+  height: 72vmin;
+  width: 68vmin;
   display: flex;
   flex-direction: column;
   background-color: #293447;
@@ -57,4 +63,15 @@ body {
   padding: 15px;
   cursor: pointer;
   color: #b8c6dc;
+}
+ 
+.gameover {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 800;
+  color: red;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
