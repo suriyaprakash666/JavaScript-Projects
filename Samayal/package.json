@@ -1,0 +1,17 @@
+{
+  "name": "samayal",
+  "version": "1.0.0",
+  "description": "Recipe application",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel bulid index.html"
+  },
+  "author": "Suriya Prakash",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "sass": "^1.60.0"
+  }
+}
