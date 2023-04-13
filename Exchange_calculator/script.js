@@ -24,10 +24,10 @@ function calculate() {
 }
 
 // Event listeners
-currencyEl_one.addEventListener("change", caclulate);
-amountEl_one.addEventListener("input", caclulate);
-currencyEl_two.addEventListener("change", caclulate);
-amountEl_two.addEventListener("input", caclulate);
+currencyEl_one.addEventListener("change", calculate);
+amountEl_one.addEventListener("input", calculate);
+currencyEl_two.addEventListener("change", calculate);
+amountEl_two.addEventListener("input", calculate);
 
 swap.addEventListener("click", () => {
   const temp = currencyEl_one.value;
